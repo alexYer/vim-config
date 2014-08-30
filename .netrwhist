@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='ftp://fs_dvlp@shafran.solid-cart.com/public_html/protected/extensions/fbgallery/libs/general/'
+let g:netrw_dirhist_2='/home/mannavard/.vim/bundle/pep8/plugin'
+let g:netrw_dirhist_3='/home/mannavard/src/work/sopcor/sopcor-appserv'
+let g:netrw_dirhist_4='/media/mannavard/D8C23379C2335B48/Users/alexYer/AppData/Roaming/.minecraft/server'
