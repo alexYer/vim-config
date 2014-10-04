@@ -16,3 +16,15 @@ snippet match
 	match ${1:x} {
 		${2:x => code}
 	}
+snippet for
+	for ${1:var} in ${2:expr} {
+		${3: /* code */ }
+	}
+snippet wh
+	while ${1:/* condition */} {
+		${2:/* code */}
+	}
+snippet loop
+	loop {
+		${1:/* code */}
+	}
