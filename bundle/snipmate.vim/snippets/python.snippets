@@ -26,7 +26,7 @@ snippet for
 		${3:# code...}
 # New Class
 snippet cl
-	class ${1:ClassName}(${2:object}):
+	class ${1:`Filename("", "untitled")`}(${2:object}):
 		"""${3:$1}"""
 		def __init__(self, ${4:arg}):
 			${5:super($1, self).__init__()}
