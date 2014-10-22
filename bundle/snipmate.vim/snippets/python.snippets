@@ -132,4 +132,4 @@ snippet mset
 		${3:self.data}[$1] = $2
 snippet mdelitem
 	def __delitem__(self, ${1:key}):
-		return ${2:self.data}[$1]
+		del ${2:self.data}[$1]
