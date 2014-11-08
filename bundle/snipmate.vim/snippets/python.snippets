@@ -28,10 +28,8 @@ snippet for
 snippet cl
 	class ${1:`Filename("", "untitled")`}(${2:object}):
 		"""${3:$1}"""
-		def __init__(self, ${4:arg}):
+		def __init__(self):
 			${5:super($1, self).__init__()}
-			self.$4 = $4
-			${6}
 # New Function
 snippet def
 	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
