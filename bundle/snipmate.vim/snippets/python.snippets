@@ -118,6 +118,12 @@ snippet args
 	            			required=True)
 	
 	    return parser.parse_args()
+snippet arg
+	parser.add_argument('--${1:name}',
+						dest='$1',
+						type=${2:str},
+						help='${3:help}',
+						required=${4:True})
 snippet miter
 	def __iter__(self):
 		for $1 in ${2:self.data}:
@@ -134,3 +140,5 @@ snippet mdelitem
 snippet pprint
 	from pprint import pprint
 	pprint(${1:val})
+snippet re
+	return
