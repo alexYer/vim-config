@@ -42,6 +42,8 @@ set incsearch
 set ignorecase
 set number
 
+au BufEnter *.coffee set expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
 "autocmd VimEnter * NERDTree " NEDRTree autostart
 set t_Co=256
 colorscheme xoria256
