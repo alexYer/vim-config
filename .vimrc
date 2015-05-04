@@ -84,3 +84,6 @@ let mapleader = ","
 
 " Python settings
 let g:pep8_map = '<leader>8'
+
+" yank limit
+set viminfo='100,<1000,s10,h,
