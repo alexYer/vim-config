@@ -116,3 +116,48 @@ command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
 nnoremap <F12> :ShowSpaces 1<CR>
 nnoremap <S-F12> m`:TrimSpaces<CR>``
 vnoremap <S-F12> :TrimSpaces<CR>
+
+" go
+let g:neocomplete#enable_at_startup = 1
+
+let g:tagbar_type_go = {
+    \ 'ctagstype': 'go',
+    \ 'kinds' : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'm:methods',
+        \ 'f:functions'
+    \ ],
+    \ 'sro': '.',
+    \ 'kind2scope': {
+        \ 't': 'ctype',
+        \ 'n': 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin': 'gotags',
+    \ 'ctagsargs': '-sort -silent'
+\}
+
+nmap <f8> :TagbarToggle<cr>
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+let g:go_fmt_command = "goimports"
+
+au filetype go nmap <leader>r <plug>(go-run)
+au filetype go nmap <leader>b <plug>(go-build)
+au filetype go nmap <leader>t <plug>(go-test)
+au filetype go nmap <leader>c <plug>(go-coverage)
+au filetype go nmap <leader>dv <plug>(go-def-vertical)
