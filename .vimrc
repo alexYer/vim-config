@@ -118,6 +118,7 @@ nnoremap <S-F12> m`:TrimSpaces<CR>``
 vnoremap <S-F12> :TrimSpaces<CR>
 
 " go
+let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 
 let g:tagbar_type_go = {
@@ -146,7 +147,7 @@ let g:tagbar_type_go = {
     \ 'ctagsargs': '-sort -silent'
 \}
 
-nmap <f8> :TagbarToggle<cr>
+nmap <F8> :TagbarToggle<CR>
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -169,3 +170,15 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_director='~/.vim/bundle/vim-snippets/snippets'
+
+function! Multiple_cursors_before()
+    if exists(':NeoCompleteLock')==2
+        exe 'NeoCompleteLock'
+    endif
+endfunction
+
+function! Multiple_cursors_after()
+    if exists(':NeoCompleteUnlock')==2
+        exe 'NeoCompleteUnlock'
+    endif
+endfunction
