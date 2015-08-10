@@ -161,3 +161,8 @@ au filetype go nmap <leader>b <plug>(go-build)
 au filetype go nmap <leader>t <plug>(go-test)
 au filetype go nmap <leader>c <plug>(go-coverage)
 au filetype go nmap <leader>dv <plug>(go-def-vertical)
+
+" Neosnippets
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+xmap <C-k> <Plug>(neosnippet_expand_target)
