@@ -45,6 +45,7 @@ set number
 au BufEnter *.coffee set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 au BufEnter *.rb set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 au BufEnter *.js set expandtab tabstop=2 shiftwidth=2 softtabstop=2
+au BufEnter *.jsx set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 au BufEnter *.hbs set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 au BufEnter *.html set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
