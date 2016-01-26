@@ -48,6 +48,9 @@ au BufEnter *.js set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 au BufEnter *.jsx set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 au BufEnter *.hbs set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 au BufEnter *.html set expandtab tabstop=2 shiftwidth=2 softtabstop=2
+au BufEnter *.cpp set noexpandtab tabstop=4 shiftwidth=4 softtabstop=0
+au BufEnter *.h set noexpandtab tabstop=4 shiftwidth=4 softtabstop=0
+au BufEnter *.cc set noexpandtab tabstop=4 shiftwidth=4 softtabstop=0
 
 "autocmd VimEnter * NERDTree " NEDRTree autostart
 set t_Co=256
