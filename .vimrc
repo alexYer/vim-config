@@ -188,3 +188,13 @@ function! Multiple_cursors_after()
         exe 'NeoCompleteUnlock'
     endif
 endfunction
+
+function! SetupTbox()
+    let l:path = expand('%:p')
+    if l:path =~ '/home/mannavard/FileStore/src/c/tbox'
+        au BufEnter *.c set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+        au BufEnter *.h set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+    endif
+endfunction
+
+autocmd! BufReadPost,BufNewFile * call SetupTbox()
